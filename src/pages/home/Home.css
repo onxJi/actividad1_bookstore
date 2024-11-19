@@ -1,0 +1,80 @@
+.container__home{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #333;
+    background-image: url("/public/blur-radial.svg"),
+        url("/public/blur-radial.svg");
+    background-position:
+        top -150px left -400px,
+        bottom -200px right -450px;
+    background-size: 50%, 50%;
+    padding: 1rem;
+}
+
+
+.imagen__inicio{
+    width: 100%;
+}
+
+.container__home-welcome{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+/* Contenedor principal */
+.typing-effect {
+  font-family: 'Poppins', Courier, monospace;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  white-space: nowrap; /* Evita que el texto se envuelva */
+  overflow: hidden; /* Oculta el texto fuera del contenedor */
+  border-right: 2px solid rgb(255, 255, 255); /* Simula el cursor */
+  width: 20ch; /* Define el ancho del texto (ch = ancho de caracteres) */
+  animation: typing 7s steps(20, end) infinite, blink 0.6s step-end infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 20ch; /* Número de caracteres visibles al final */
+  }
+  100% {
+    width: 0; /* Reinicia el ancho al final */
+  }
+}
+
+/* Animación del cursor parpadeando */
+@keyframes blink {
+  from {
+    border-right-color: rgb(255, 255, 255);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+
+/* Para pantallas más grandes, usar 3 columnas */
+@media (min-width: 768px) {
+  .container__home {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  }
+  .typing-effect{
+    font-size: 1.6rem;
+  }
+}
