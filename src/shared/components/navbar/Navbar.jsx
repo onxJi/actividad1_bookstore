@@ -39,7 +39,7 @@ const Navbar = () => {
           </li>
           <li className="navbar__item">
             <a >
-              <Link to="/catalogos">Iniciar Sesión</Link>
+              <Link to="/login">Iniciar Sesión</Link>
             </a>
           </li>
         </ul>

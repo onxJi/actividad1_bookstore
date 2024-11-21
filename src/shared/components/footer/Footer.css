@@ -52,17 +52,21 @@
 }
 
 .footer__copyright{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px,100%), 1fr));
     gap: 1rem;
     border-top: #7b7b7b 1px solid;
+}
+.footer__copyright span {
+    justify-self: end;
 }
 .footer__copyright > span:hover {
     cursor: pointer;
     color: #ffcc00;
 }
-.footer__copyright-p{
-    margin-left: auto;
-}
+
+
+

@@ -43,7 +43,7 @@ export const Footer = () => {
       </div>
       <div className="footer__copyright">
         <p>© 2024 TheLibrary. Todos los derechos reservados.</p>
-        <span className='footer__copyright-p'>Política de Privacidad</span>
+        <span>Política de Privacidad</span>
         <span >Terminos y Condiciones</span>
         <span >Cookies</span>
       </div>
