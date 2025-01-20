@@ -28,19 +28,13 @@ const Navbar = () => {
         </div>
         <ul className={`navbar__items ${isMenuOpen ? "open" : ""}`}>
           <li className="navbar__item">
-            <a>
               <Link to="/">Home</Link>
-            </a>
           </li>
           <li className="navbar__item">
-            <a>
               <Link to="/catalogos">Cátalogos</Link>
-            </a>
           </li>
           <li className="navbar__item">
-            <a >
               <Link to="/login">Iniciar Sesión</Link>
-            </a>
           </li>
         </ul>
     </nav>

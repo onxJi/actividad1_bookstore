@@ -25,8 +25,8 @@ export const Footer = () => {
             <span style={{ fontWeight: 'bold'}}>Enlaces Rápidos</span>
             <ul>
               {
-              fast_links.map( (link) => (
-                <li >
+              fast_links.map( (link, index) => (
+                <li key={index}>
                   <Link to='#'>{link}</Link>
                 </li>
               ))
